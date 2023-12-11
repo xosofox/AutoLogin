@@ -5,6 +5,8 @@ namespace Jmikola\AutoLogin\User;
 use Jmikola\AutoLogin\Exception\AutoLoginTokenNotFoundException;
 use Symfony\Component\Security\Core\User\UserInterface;
 
+trigger_deprecation('jmikola/autologin', '6.0', 'The AutoLogin library is deprecated, use Symfony AccessTokenAuthenticator instead');
+
 interface AutoLoginUserProviderInterface
 {
     /**
